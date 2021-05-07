@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Home</h1>
+    <input type="text" v-model="search">
+    <p>search term - {{ search }}</p>
+    <div v-for="name in matchingNames" :key="name">{{ name }}</div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { ref, computed } from 'vue';
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  setup() {
+    const search = ref('');
+    const names = ref(['mario','yoshi', 'luigi', 'toad', 'bowser', 'koopa', 'peach'])
+
+    const matchingNames = computed(()=>{
+      return names.value.filter((name)=>{
+        return name.includes(search.value)
+      })
+    });
+
+    return { search, names, matchingNames}
+  },
+};
 </script>
