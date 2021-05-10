@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the new blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": ["webdev", "coding", "news"]
+    },
+    {
+      "id": 2,
+      "title": "top 5 CSS tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": ["css", "webdev", "coding"]
+    },
+    {
+      "title": "My name is Glenn",
+      "body": "Nice to see you!",
+      "tags": ["glad", "to", "see", "you"],
+      "id": 3
+    },
+    {
+      "title": "hey",
+      "body": "i'm new to here",
+      "tags": ["ne", "new", "hello"],
+      "id": 4
+    },
+    {
+      "title": "sdfsf",
+      "body": "sfdsf",
+      "tags": ["sdfs"],
+      "id": 5
+    },
+    {
+      "title": "fsdf",
+      "body": "sf",
+      "tags": ["sfsf"],
+      "id": 6
+    },
+    {
+      "title": "dfgdg",
+      "body": "gd",
+      "tags": [],
+      "id": 7
+    }
+  ]
+}
